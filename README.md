@@ -1,10 +1,11 @@
 
-React Native的网易云信插件
-欢迎加入QQ群交流`153174456`
+React Native的网易云信插件（定制版）
+
+
 ## Demo
 [react-native-chat-demo](https://github.com/reactnativecomponent/react-native-chat-demo)
 
-#### 注意事项: 
+#### 注意事项:
 
 ##### 1.react-native版本需要0.47.0及以上NIMSDK对应版本4.4.0
 
@@ -121,7 +122,7 @@ pod 'NIMSDK', '4.4.0'
 pod 'SSZipArchive', '~> 1.2'
 pod 'Reachability', '~> 3.1.1'
 pod 'CocoaLumberjack', '~> 2.0.0-rc2'
-pod 'FMDB', '~>2.5' 
+pod 'FMDB', '~>2.5'
 ```
 Run `pod install`
 
@@ -262,7 +263,7 @@ NativeAppEventEmitter.addListener("observeLaunchPushEvent",(data)=>{
 })；
 //程序后台时获取的推送点击事件
 NativeAppEventEmitter.addListener("observeBackgroundPushEvent",(data)=>{
-  console.log(data); 
+  console.log(data);
 })；
 //推送数据格式
 {
