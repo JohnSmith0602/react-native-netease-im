@@ -106,7 +106,7 @@ public class FriendDataCache {
     }
 
     public boolean isMyFriend(String account) {
-        return friendAccountSet.contains(account);
+        return true;
     }
 
     /**
