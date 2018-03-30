@@ -631,12 +631,15 @@ public class SessionService {
     public void sendTextMessage(String content, List<String> selectedMembers, OnSendMessageListener onSendMessageListener) {
 
         IMMessage message = MessageBuilder.createTextMessage(sessionId, sessionTypeEnum, content);
+        CustomMessageConfig config = new CustomMessageConfig();
+        config.enablePush = false; // 不推送
 
         if (selectedMembers != null && !selectedMembers.isEmpty()) {
             MemberPushOption option = createMemPushOption(selectedMembers, message);
 //            message.setPushContent("有人@了你");
             message.setMemberPushOption(option);
         }
+        message.setConfig(config);
         sendMessageSelf(message, onSendMessageListener, false);
     }
 
