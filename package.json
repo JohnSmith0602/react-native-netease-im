@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-netease-im",
-  "version": "3.0.2",
+  "version": "0.1.0",
   "description": "网易云信ReactNative插件",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,7 @@
   ],
   "repository" :
   { "type" : "git",
-    "url" : "https://github.com/reactnativecomponent/react-native-netease-im.git"
+    "url" : "https://gitlab.com/dmparts/react-native-netease-im.git"
   },
   "author": "",
   "license": "",
